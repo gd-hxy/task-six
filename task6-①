@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>精弘网络</title>
+      <meta name="keywords" content="精弘网络,css3">
+      <meta name="description" content="这是我个人为了完成精弘网络开发部前端任务所设计的网页">
+      <meta charset="utf-8">
+    </head>
+    <style type="text/css">
+      #box{
+        width: 980px;
+        height: 1386px;
+        margin: 0 auto;
+        padding: 0 44px;
+      }
+      .top{
+        width: 892px;
+        height: 63px;
+        position: relative;
+      }
+      #title1{
+        height: 61px;
+        width: 110px;
+        background: #d55d5c;
+        position: relative;
+      }
+      #title1 p{
+        color: #ffffff;
+        font-size: 12px;
+        font-family: "黑体";
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+      }
+      #time{
+        background: #d45d5c;
+        font-size: 12px;
+        font-family: "黑体";
+        height: 61px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      #time span{
+        right: 0;
+        bottom: 5px;
+        position: absolute;
+      }
+      #hr1{
+        width: 892px;
+        height: 2px;
+        background: #938e8c;
+      }
+    </style>
+    <body>
+      <div id="box">
+        <div class="top">
+          <div id="title1">
+            <p>&nbsp
+              zjut</p>
+          </div>
+      <div id="time">
+        <span>2017.10</span></div>
+        <div id="hr1"></div>
+
+
+
+    </body>
+ </html>
+    
