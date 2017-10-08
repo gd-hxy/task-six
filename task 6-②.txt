@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>精弘网络</title>
+      <meta name="keywords" content="精弘网络,css3">
+      <meta name="description" content="这是我个人为了完成精弘网络开发部前端任务所设计的网页">
+      <meta charset="utf-8">
+    </head>
+    <style type="text/css">
+      #box{
+        width: 980px;
+        height: 1386px;
+        margin: 0 auto;
+        padding: 0 44px;
+        background-color: #ffffff;
+      }
+      .top{
+        width: 892px;
+        height: 63px;
+        position: relative;
+      }
+      #title1{
+        height: 61px;
+        width: 110px;
+        background: #d55d5c;
+        position: relative;
+      }
+      #title1 p{
+        color: #ffffff;
+        font-size: 12px;
+        font-family: "黑体";
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+      }
+      #time{
+        background: #d45d5c;
+        font-size: 12px;
+        font-family: "黑体";
+        height: 61px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      #time span{
+        right: 0;
+        bottom: 5px;
+        position: absolute;
+      }
+      #hr1{
+        width: 892px;
+        height: 2px;
+        background: #938e8c;
+			}
+      .display{        <!--第二栏父容器-->
+        width: 892px;
+        margin-top: 45px;
+      }
+      .leftc{         <!--第二栏左边的子容器，用以存放图片和背景色-->
+        width: 641px;
+        display:inline-block;
+      }
+      #photo{        <!--第二栏用以存放图片的分区-->
+        width: 641px;
+        height: 301px;
+        background-image: url(./jhwl.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+      #bgl{          <!--第二栏左边的透明背景区-->
+        width: 191px;
+        height: 301px;
+        background: lawngreen;
+        float: left;
+      }
+      #bgr{          <!--第二栏右边的透明背景区-->
+        width: 191px;
+        height: 301px;
+        background:IndianRed;
+        float: right;
+      }
+      #detail{
+        width: 641px;
+        padding: 50px 0;
+        height: 192px;
+      }
+      #leftd{
+        float: left;
+        width: 30%;
+        padding-right:2%;
+      }
+      #leftd dt{
+        font-size: 16px;
+        color: #418c59;
+        font-family: "微软雅黑";
+        font-weight: bold;
+        text-decoration: underline;
+        line-height: 40px;
+      }
+      #leftd dd{
+        font-size: 12px;
+        color: #767777;
+        font-family: "宋体";
+        line-height: 16px;
+        margin-left: 0;
+      }
+      #centerd{
+        float: left;
+        width: 30%;
+        padding:0 2%;
+      }
+      #centerd dt{
+        font-size: 16px;
+        font-family: "微软雅黑";
+        color: #d2994f;
+        font-weight: bold;
+        text-decoration: underline;
+        line-height: 40px;
+      }
+      #centerd dd{
+        font-size: 12px;
+        color: #767777;
+        font-family: "宋体";
+        line-height: 16px;
+        margin-left: 0;
+        opacity: 70%;
+      }
+      #rightd{
+        padding-left:2%;
+        float:left;
+        width: 25%;
+      }
+      #rightd dt{
+        font-size: 16px;
+        color: #cc7680;
+        font-family: "微软雅黑";
+        font-weight: bold;
+        text-decoration: underline;
+        line-height: 40px;
+      }
+      #rightd dd{
+        font-size: 12px;
+        color: #767777;
+        font-family: "宋体";
+        line-height: 16px;
+        margin-left: 0;
+      }
+      #rightd li{
+				font-family: "微软雅黑";
+				margin-left: 0;
+				font-size: 12px;
+				line-height: 16px;
+			}
+			#rightd span{
+				font-style: italic;
+				color: rgba(229,146,149,0.7);
+			}
+      .rightc{
+        width: 203px;
+        float: right;
+      }
+      .rightc hr{
+        width: 203px;
+        height: 2px;
+        background: #cc8091;
+        border: none;
+        margin: 0;
+        }
+      .p1{
+        font-size: 24px;
+        color: #000000;
+        font-family: "微软雅黑";
+        text-decoration: underline;
+        line-height: 5px;
+      }
+      .p1 span{
+        font-size: 29px;
+      }
+      #p2{
+        padding-top: 10px;
+      }
+      #p3{
+        font-size: 12px;
+        color: #676767;
+        font-family: "楷体";
+        line-height:10px;
+        margin: 0;
+      }
+      #p4{
+        font-size: 116px;
+        color: #75b86b;
+        font-family: "微软雅黑";
+        font-style: italic;
+        margin: 0;
+      }
+      #bott{
+        margin-top: -15px;
+      }
+      #thr{
+        font-size: 55px;
+        color: #cc8091;
+        font-family: "微软雅黑";
+        width: 80px;
+        height: 70px;
+        float: left;
+        padding-top: 10px;
+      }
+      #scc{
+        font-size: 21px;
+        color: #cc8091;
+        font-family: "微软雅黑";
+        line-height: 0;
+      }
+      #thrd{
+        font-size: 12px;
+        color: #cccccc;
+        font-family: "微软雅黑";
+        line-height: 0;
+      }
+
+      .main{
+        width: 892px;
+        margin: 30px 0;
+      }
+      .mainl{
+        width: 415px;
+        display: inline-block;
+      }
+      #mltop{
+        width: 100%
+      }
+      #pf{
+        font-size: 42px;
+        color: #11456b;
+        font-family: "黑体";
+        font-weight: bold;
+        line-height: 42px;
+        margin: 0;
+      }
+      #pf span{
+        font-size: 72px;
+        color: #f5e327;
+        font-family: "黑体";
+        font-weight: bold;
+        font-style: italic;
+        line-height: 72px;
+      }
+      #pa{
+        font-size: 33px;
+        color: #11456b;
+        font-family: "黑体";
+        font-weight: bold;
+        line-height: 50px;
+        margin: 0;
+      }
+      .mltop hr{
+        width: 415px;
+        height: 2px;
+        border: none;
+        background: #11456b;
+        margin: 0;
+      }
+    </style>
+    <body style="background-color:gray">
+      <div id="box">
+        <div class="top">
+          <div id="title1">
+            <p>&nbsp
+              zjut</p>
+          </div>
+      <div id="time">
+        <span>2017.10</span></div>
+        <div id="hr1"></div>
+
+
+      <div class="display">
+        <div class="leftc">
+          <div id="photo" >
+            <div id="bgl"></div>
+            <div id="bgr"></div>
+      </div>
+      <div id="detail">
+        <div id="leftd">
+          <dl>
+            <dt >what</dt>
+            <dd>精弘网络是浙江工业大学校级学生组织，自
+              2002年5月成立以来，以打造大学生五彩生活为宗旨。
+              整合校内外网络传播资源，积极营造浓厚的网络文化氛围.</dd>
+              <br/>
+            </dl>
+          </div>
+      <div id="centerd">
+        <dl>
+          <dt>when</dt>
+          <dd>2002年5月2002年5月2002年5月</dd>
+          <dd>2002年5月2002年5月2002年5月</dd>
+          <dd>2002年5月2002年5月2002年5月</dd>
+          <br/>
+        </dl>
+      </div>
+      <div id="rightd">
+        <dl>
+          <dt>honour</dt>
+          <dd>2010年05月，获第四届全国百佳网站荣誉称号。</dd>
+          <dd>2012年12月，获第五届全国百佳网站荣誉称号。</dd>
+          <dd>2013年01月，获2013年浙江省文化传播创新十佳网站。</dd>
+          </dl>
+          <ul>
+            <li>what--------<span>40%</span></li>
+            <li>when--------<span>30%</span></li>
+            <li>honour--------<span>25%</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="rightc">
+        <hr/>
+        <p class="p1" id="p2"><span>A</span>BOUT</p>
+        <p class="p1"><span>T</span>ECHNOLOGE</p>
+        <p id="p3">About technologe about technologe about technologe</p>
+        <p id="p4">700</p>
+
+      <div id="bott">
+        <span id="thr">3.2</span>
+        <br/>
+        <p id="scc">css</p>
+        <p id="thrd">csssssccscscssc</p>
+      </div>
+    </div>
+  </div>
+
+      <div class="main">
+        <div class="mainl">
+          <div id="mltop">
+            <p id="pf"><span>THE</span> TECHNOLOGE OF FRONT</p>
+            <p id="pa">前端技术领域</p>
+            <hr/>
+          </div>
+
+      </div>
+    </body>
+</html>
